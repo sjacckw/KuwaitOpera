@@ -18,6 +18,31 @@
 	<!--stylesheet include-->
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+
+		.columnNawal {
+			float: left;
+			width: 20%;
+			padding: 5px;
+		}
+	</style>
 </head>
 
 <body dir="rtl">
@@ -163,7 +188,7 @@
 							<button type="button" class="collapsible">إقرأ المزيد >>></button>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="container pink-block">
@@ -190,9 +215,29 @@
 					<div class="more-content">
 						<div class="content-block">
 							<div class="collap-content">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								<div class="row">
+									<div style="float: left; width: 20%; padding: 5px;">
+										<img src="images/Nawal_retouch.jpg" style="width:100%">
+									</div>
+
+									<div style="float: left; width: 80%; padding: 5px;">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor
+											incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+											nostrud
+											exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									</div>
+								</div>
 								<div class="video_box">
 									<iframe class="iframeplayer" id="iframeplayer4"
 										src='https://rrr.sz.xlcdn.com/?account=yasser&file=NAWAL_LONG.smil&type=streaming&service=wowza&poster=NAWAL_LONG_POSTER.jpg&output=player'
