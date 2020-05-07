@@ -23,6 +23,20 @@
     font-weight: bold;
     font-style: normal;
 }
+
+
+@font-face {
+	font-family: "Greta Arabic Regular";
+	src: url("../fonts/Greta_Arabic_Regular.otf");
+}
+
+@font-face {
+	font-family: "ITCHandelGothicArabic-Bold";
+	src: url("../fonts/ITCHandelGothicArabic-Bold.ttf");
+}
+
+
+
 /* Reset ================================================================================= */
 
 *{margin:0;padding:0}
@@ -174,6 +188,8 @@ p {
 	font-size: 32px;
 	color: #ffffff;
 	line-height: 46px;
+	font-family: 'ITCHandelGothicArabic-Bold';
+
 }
 
 .light-purple-block .content-block h2 {
@@ -188,6 +204,7 @@ p {
 	font-size: 20px;
 	color: #333333;
 	line-height: 30px;
+	font-family: 'ITCHandelGothicArabic-Bold';
 }
 
 .yellow-block .content-block h3 {
