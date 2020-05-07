@@ -134,12 +134,24 @@ p {
 	float: left;
 }
 
+.top-left-header {
+	width: 50%;
+	text-align: left;
+	float: left;
+}
+
 .top-left p {
 	margin: 14px 0;
 }
 
 .top-right {
 	width: 25%;
+	text-align: right;
+	float: right;
+}
+
+.top-right-header {
+	width: 50%;
 	text-align: right;
 	float: right;
 }

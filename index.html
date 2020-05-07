@@ -20,7 +20,7 @@
 	<link href="https://db.onlinewebfonts.com/c/0dde7c4fdb8c84514b67d0b6a33a8240?family=Greta+Arabic+AR+++LT+ExtraLight"
 		rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=123">
+	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=124">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -47,21 +47,51 @@
 			float: left;
 			margin-right: 10px;
 		}
+
+		.flexEqH {
+			display: flex;
+			flex-direction: row;
+		}
+
+		#div1 {}
+
+		#div2 {}
 	</style>
 </head>
 
 <body dir="rtl">
-	<div class="wrapper">
+	<div class="wrapper" style="padding: 0;">
 		<div class="container" id="contentDiv">
 			<div class="body-content">
-				<div class="top-right col-3"><img src="images/jacclogo3.png" /></div>
-				<div class="top-left col-9">
-					<p>النشرة الإلكترونية<br /><span style="font-weight: 700;">العدد 1 | 1
-							مايو 2020</span></p>
+
+				<div class="top-right-header col-xs-6">
+					<img src="images/jacclogo3.png" id="jacclogo" style="height: 106px;" />
+					<h2>أمسيات لا تُنسَى</h2>
 				</div>
+				<div class="top-left-header col-xs-6">
+					<img src="images/ramadan1.png" id="ramadancandle" style="height: 200px;" />
+
+				</div>
+
+				<!-- <section class="flexEqH">
+					<div id="div1">
+						<img src="images/jacclogo3.png" style="height: 106px;" />
+						<h2>أمسيات لا تُنسَى</h2>
+					</div>
+					<div  id="div2">
+						<img src="images/ramadan1.png" style="height: 250px;" />
+	
+					</div>
+				</section> -->
+
 				<div class="bold-hr"></div>
-				<h2>أمسيات لا تُنسَى</h2>
-				<div class="lady-photo">
+
+				<div class="lady-photo" style="position: relative;">
+					<div style="background-color: black;color: white;position: absolute;left: 0;padding: 5px;">
+						<p style="margin-bottom: 0px;">النشرة الإلكترونية<br />
+							<span style="font-weight: 700;">العدد 1 | 1 مايو 2020</span></p>
+					</div>
+
 					<img src="images/event-1.jpg" alt="" />
 				</div>
 				<div class="intro-block ">
@@ -307,7 +337,7 @@
 								<p style="font-family: 'Greta Arabic Regular'; font-weight: 100;">على مدى ليلتين
 									متتاليتين في 8 و9 أكتوبر 2019، استمتع جمهور المركز بباقة من أشهر
 									الأغنيات والألحان التي حملت اسم يوسف المهنّا...</p>
-								  <div>
+								<div>
 								</div>
 							</div>
 						</div>
@@ -760,6 +790,14 @@
 
 
 		window.onload = function () {
+
+           
+			if (screen.width < 600) {
+
+				$("#ramadancandle").attr("style", "height:150px");
+				$("#jacclogo").attr("style", "height:80px");
+				
+			}
 
 			var w = document.getElementById("contentDiv").offsetWidth;
 			console.log(w);
