@@ -843,8 +843,15 @@
 				var content = this.previousElementSibling;
 				if (content.style.display === "block") {
 					content.style.display = "none";
-					this.innerHTML = "اقرأ المزيد >>";
-
+					
+					if(this.dataset.id !== 'card7')
+					{
+						this.innerHTML = "اقرأ المزيد >>";
+					}
+					else
+					{
+						this.innerHTML = '<img src="images/play-btn.svg" alt="">';
+					}
 					//console.log(this.dataset.id);
 
 					var elmnt = document.getElementById(this.dataset.id);
@@ -852,8 +859,11 @@
 					elmnt.scrollIntoView();
 
 				} else {
+
 					content.style.display = "block";
 					this.innerHTML = "أغلق >>";
+					
+					
 				}
 
 
