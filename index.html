@@ -17,10 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<!--stylesheet include-->
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap" rel="stylesheet">
-	<link href="https://db.onlinewebfonts.com/c/0dde7c4fdb8c84514b67d0b6a33a8240?family=Greta+Arabic+AR+++LT+ExtraLight"
-		rel="stylesheet" type="text/css" />
+
 	<link rel="stylesheet" type="text/css" media="all" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=126">
+	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=130">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -45,7 +44,8 @@
 
 		#floated {
 			float: left;
-			margin-right: 10px;
+			padding-right: 10px;
+			margin-bottom: 15px;
 		}
 
 		.flexEqH {
@@ -68,7 +68,12 @@
 			margin: 0;
 		}
 
-		@media only screen and (max-device-width: 600px) {
+		.nawalImage {
+
+			height: 400px;
+		}
+
+		@media only screen and (max-device-width: 480px) {
 
 			.ramadancandle {
 				height: 130px;
@@ -87,6 +92,22 @@
 
 			.social-media li a img {
 				width: 15px;
+			}
+
+			.nawalImage {
+
+				height: 410px;
+			}
+
+		}
+
+		@media screen and (max-width: 600px) and (min-width: 480px) {
+
+
+
+			.nawalImage {
+
+				height: 410px;
 			}
 
 		}
@@ -122,7 +143,7 @@
 
 				<div class="lady-photo" style="position: relative;">
 					<div style="background-color: black;color: white;position: absolute;left: 0;padding: 5px;">
-						<p style="margin-bottom: 0px;">النشرة الإلكترونية<br />
+						<p style="margin-bottom: 0px;font-family: 'ITCHandelGothicArabic-Bold';">النشرة الإلكترونية
 							<span style="font-weight: 700;">العدد 1 | 1 مايو 2020</span></p>
 					</div>
 
@@ -446,7 +467,10 @@
 							</div>
 							<div class="bottom-content">
 								<p style="font-family: 'Greta Arabic Regular'; font-weight: 100;">
-									في سياق فعاليات وحفات الموسم الثقافي الثالث، أطلّت الفنانة المحبوبة نوال الكويتية عى جمهورها في مركز الشيخ جابر الأحمد الثقافي، في السابع عشر من نوفمر 2019 ...	
+									في سياق فعاليات وحفات الموسم الثقافي الثالث، أطلّت الفنانة المحبوبة نوال الكويتية عى
+									جمهورها في مركز الشيخ جابر الأحمد الثقافي، في السابع عشر من نوفمر 2019 لتحيي حفاً
+									غنائيًا عى خشبة المسرح الوطني، وتعلن ولادة ألبومها الجديد «الحنن » وتُمتّع محبّيها
+									بأحدث أغنياته، لينساب عى المسرح كشاّل من العصافر، تزامنًا مع طرحه رسميًا في الأسواق.
 								</p>
 							</div>
 						</div>
@@ -460,13 +484,10 @@
 						<div class="content-block">
 							<div class="collap-content">
 								<div id="container">
-									<div id="floated" class=""><img src="images/nawal-left.png" style="height: 400px;">
+									<div id="floated" class=""><img src="images/nawal_new.jpg" class="nawalImage">
 									</div>
 
-									<p style="margin-left: 15px;font-family: 'Greta Arabic Regular'; font-weight: 100;"
-										class="">لتحيي حفاً غنائيًا عى خشبة المسرح الوطني، وتعلن ولادة
-										ألبومها الجديد «الحنن » وتُمتّع محبّيها بأحدث أغنياته، لينساب عى المسرح كشاّل من
-										العصافر، تزامنًا مع طرحه رسميًا في الأسواق.</p>
+
 									<p class="" style="font-family: 'Greta Arabic Regular'; font-weight: 100;">تألقت
 										القيثارة الخليجية في حفل «الحنن » في حضور عددٍ
 										كثيف من أبرز الملحنن
@@ -827,6 +848,17 @@
 				}
 			});
 		}
+
+
+		$(document).ready(function () {
+
+			if (screen.width < 600) {
+				var w = screen.width - 40;
+
+
+			//	$(".nawalImage").attr("style", "width:" + w + "px")
+			}
+		});
 
 
 
