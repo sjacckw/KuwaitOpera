@@ -426,9 +426,6 @@
 									خلال مقاطع وصور توثيقية وبرنامجٍ ضمّ أجمل أغنياته وألحانه
 
 								</p>
-
-
-
 							</div>
 							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;"
 								id="cardBtn2" data-id="card2">اقرأ المزيد >></button>
@@ -453,8 +450,7 @@
 									بقيادة المايسترو محمد باقر، وبحضور المهنّا ونخبة من أقرانه الذين شكّلوا معه ملامح
 									المشهد الفنّي في الكويت.
 								</p>
-								<div>
-								</div>
+
 							</div>
 						</div>
 					</div>
@@ -463,6 +459,7 @@
 							<img src="images/Mhanna.jpg" alt="" />
 						</div>
 					</div>
+
 					<div class="more-content">
 						<div class="content-block">
 							<div class="collap-content">
@@ -471,7 +468,6 @@
 									من أشهر الأغنيات والألحان التي حملت اسم المهنّا، وذلك في مسرح الشيخ جابر العلي
 									المهيّأ خصيصًا للأمسيات الغنائية التقليدية، بصورتها النقية، وبلا ميكروفونات أو
 									مكبراتٍ للصوت.
-
 								</p>
 
 								<div class="video_box ">
@@ -927,7 +923,7 @@
 		function onClickCollapsible(event) {
 
 			var btn = document.getElementById(event.id);
-			console.log(btn);
+			//console.log(btn);
 
 			btn.classList.toggle("active");
 			var content = btn.previousElementSibling;
@@ -958,16 +954,6 @@
 
 		$(document).ready(function () {
 
-			// var coll = document.getElementsByClassName("collapsible");
-			// var i;
-
-			// for (i = 0; i < coll.length; i++) {
-			// 	coll[i].addEventListener("click", function () {
-
-
-
-			// 	});
-			// }
 		});
 
 
