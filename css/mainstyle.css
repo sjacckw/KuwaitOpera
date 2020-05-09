@@ -330,6 +330,7 @@ p {
 	background-color: transparent;
 	font-family: 'Scheherazade', serif;
 	font-weight: 700;
+	padding: 10px;
 }
 
 .collapsible.active {

@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Scheherazade:wght@400;700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="all" href="css/animate.min.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=131">
+	<link rel="stylesheet" type="text/css" media="all" href="css/mainstyle.css?v=132">
 	<style>
 		* {
 			box-sizing: border-box;
@@ -67,6 +67,8 @@
 			font-size: 14px;
 			color: #000000;
 			margin: 0;
+			font-weight: 900;
+			font-family: 'ITCHandelGothicArabic-Bold'
 		}
 
 		.nawalImage {
@@ -89,6 +91,8 @@
 				font-size: 11px;
 				color: #000000;
 				margin: 0;
+				font-weight: 900;
+				font-family: 'ITCHandelGothicArabic-Bold'
 			}
 
 			.social-media li a img {
@@ -313,7 +317,7 @@
 								</div>
 
 							</div>
-							<button type="button" class="collapsible" data-id="card1">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn1" data-id="card1">اقرأ المزيد >></button>
 						</div>
 					</div>
 				</div>
@@ -421,7 +425,7 @@
 										allowfullscreen='true' webkitAllowFullScreen='true'></iframe>
 								</div>
 							</div>
-							<button type="button" class="collapsible" data-id="card2">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn2" data-id="card2">اقرأ المزيد >></button>
 						</div>
 					</div>
 				</div>
@@ -496,7 +500,7 @@
 								</div>
 
 							</div>
-							<button type="button" class="collapsible" data-id="card3">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn3" data-id="card3">اقرأ المزيد >></button>
 						</div>
 					</div>
 
@@ -564,7 +568,7 @@
 										allowfullscreen='true' webkitAllowFullScreen='true'></iframe>
 								</div>
 							</div>
-							<button type="button" class="collapsible" data-id="card4">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn4" data-id="card4">اقرأ المزيد >></button>
 						</div>
 					</div>
 				</div>
@@ -707,7 +711,7 @@
 
 
 							</div>
-							<button type="button" class="collapsible" data-id="card5">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn5" data-id="card5">اقرأ المزيد >></button>
 						</div>
 					</div>
 				</div>
@@ -748,29 +752,12 @@
 									لأغاني فيروز «نسم علينا الهوا » و «سألوني الناس »، وتحية مروان خوري لوطنه بأغنية
 									«بحبك يا لبنان »، بينما تشكلت الخلفية بألوان علم لبنان.</p>
 
-								<div class="">
-									<div class="slideshow-container" dir="ltr">
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_1.jpg" alt="" />
-										</div>
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_2.jpg" alt="" />
-										</div>
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_3.jpg" alt="" />
-										</div>
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_4.jpg" alt="" />
-										</div>
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_5.jpg" alt="" />
-										</div>
-										<div class="mySlides fade">
-											<img src="images/slider4/Marwan_slide_6.jpg" alt="" />
-										</div>
-										<a class="prev" onclick="plusSlides(this,-1)">&#10094;</a>
-										<a class="next" onclick="plusSlides(this,1)">&#10095;</a>
-									</div>
+
+								<div class="video_box ">
+									<iframe class="iframeplayer" id="iframeplayer6"
+										src='https://rrr.sz.xlcdn.com/?account=yasser&file=MARWAN_LONG.smil&type=streaming&service=wowza&poster=MARWAN_LONG_POSTER.jpg&output=player'
+										width='100%' height='360' frameborder='0' seamless allow='autoplay; fullscreen'
+										allowfullscreen='true' webkitAllowFullScreen='true'></iframe>
 								</div>
 								<p class="" style="font-family: 'Greta Arabic Regular'; font-weight: 100;">امتلأت قاعة
 									الشيخ جابر العي الصباح الموسيقية بأكملها في
@@ -798,15 +785,33 @@
 										صديقي الأقرب منذ عمر 9 سنوات، منذ أول بيانو صغر لعبت عليه كبرنا معا، وحينما أكون
 										وراء البيانو أشعر أنني محمي، في غرفتي وعالمي الخاص حتى لو كنت عى المسرح.</p>
 								</div>
-
-								<div class="video_box ">
-									<iframe class="iframeplayer" id="iframeplayer6"
-										src='https://rrr.sz.xlcdn.com/?account=yasser&file=MARWAN_LONG.smil&type=streaming&service=wowza&poster=MARWAN_LONG_POSTER.jpg&output=player'
-										width='100%' height='360' frameborder='0' seamless allow='autoplay; fullscreen'
-										allowfullscreen='true' webkitAllowFullScreen='true'></iframe>
+								<div class="">
+									<div class="slideshow-container" dir="ltr">
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_1.jpg" alt="" />
+										</div>
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_2.jpg" alt="" />
+										</div>
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_3.jpg" alt="" />
+										</div>
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_4.jpg" alt="" />
+										</div>
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_5.jpg" alt="" />
+										</div>
+										<div class="mySlides fade">
+											<img src="images/slider4/Marwan_slide_6.jpg" alt="" />
+										</div>
+										<a class="prev" onclick="plusSlides(this,-1)">&#10094;</a>
+										<a class="next" onclick="plusSlides(this,1)">&#10095;</a>
+									</div>
 								</div>
+
 							</div>
-							<button type="button" class="collapsible" data-id="card6">اقرأ المزيد >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn6" data-id="card6">اقرأ المزيد >></button>
 						</div>
 					</div>
 				</div>
@@ -846,8 +851,10 @@
 							<td style="width: 25%;">
 								<div class="" style="text-align: right;">
 
-									<p style="padding-right: 5px;font-weight: 700;" class="pmobile"><a
-											href="https://www.jacc-kw.com/" target="_blank"><b>jacc-kw.com</b></a></p>
+									<p style="padding-right: 5px;margin: 0;">
+										<a href="https://www.jacc-kw.com/" target="_blank"
+											class="pmobile">jacc-kw.com</a>
+									</p>
 
 								</div>
 							</td>
@@ -903,50 +910,52 @@
 	<script src="css/wow.min.js"></script>
 
 	<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function () {
-				this.classList.toggle("active");
-				var content = this.previousElementSibling;
-				if (content.style.display === "block") {
-					content.style.display = "none";
-
-					if (this.dataset.id !== 'card7') {
-						this.innerHTML = "اقرأ المزيد >>";
-					}
-					else {
-						this.innerHTML = '<img src="images/play-btn.svg" alt="">';
-					}
-					//console.log(this.dataset.id);
-
-					var elmnt = document.getElementById(this.dataset.id);
-					//console.log(elmnt);
-					elmnt.scrollIntoView();
-
-				} else {
-
-					content.style.display = "block";
-					this.innerHTML = "أغلق >>";
 
 
+		function onClickCollapsible(event) {
+
+            var btn = document.getElementById(event.id);
+			console.log(btn);
+
+			btn.classList.toggle("active");
+			var content = btn.previousElementSibling;
+			if (content.style.display === "block") {
+				content.style.display = "none";
+
+				if (btn.dataset.id !== 'card7') {
+					btn.innerHTML = "اقرأ المزيد >>";
 				}
+				else {
+					btn.innerHTML = '<img src="images/play-btn.svg" alt="">';
+				}
+				//console.log(this.dataset.id);
+
+				var elmnt = document.getElementById(btn.dataset.id);
+				//console.log(elmnt);
+				elmnt.scrollIntoView();
+
+			} else {
+
+				content.style.display = "block";
+				btn.innerHTML = "أغلق >>";
 
 
+			}
 
-			});
 		}
-
 
 		$(document).ready(function () {
 
-			if (screen.width < 600) {
-				var w = screen.width - 40;
+			// var coll = document.getElementsByClassName("collapsible");
+			// var i;
+
+			// for (i = 0; i < coll.length; i++) {
+			// 	coll[i].addEventListener("click", function () {
 
 
-				//	$(".nawalImage").attr("style", "width:" + w + "px")
-			}
+
+			// 	});
+			// }
 		});
 
 
