@@ -175,6 +175,7 @@ p {
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 26px;
+	color: #000000;
 }
 
 .section-content .container {
@@ -198,23 +199,17 @@ p {
 .content-block h2 {
 	margin-bottom: 0px;
 	font-size: 32px;
-	color: #ffffff;
+	color: #000000;
 	line-height: 46px;
 	font-family: 'ITCHandelGothicArabic-Bold';
 
 }
 
-.light-purple-block .content-block h2 {
-	color: #da9e29;
-}
 
-.gray-block .content-block h2 {
-	color: #333333;
-}
 
 .content-block h3 {
 	font-size: 20px;
-	color: #333333;
+	color: #646464;
 	line-height: 30px;
 	font-family: 'ITCHandelGothicArabic-Bold';
 }
@@ -225,12 +220,12 @@ p {
 
 .light-purple-block .content-block h3,
 .purple-block .content-block h3 {
-	color: #ffffff;
+	color: #646464;
 }
 
 .light-purple-block .content-block p,
 .purple-block .content-block p {
-	color: #ffffff;
+	color: #646464;
 }
 
 .section-content .container .more-content {
@@ -262,27 +257,28 @@ p {
 }
 
 .section-content .yellow-block {
-	background-color: #DA9E29;
+	background-color: #fcf8e3;
 }
 
 .section-content .light-purple-block {
-	background-color: #7A6FA7;
+	background-color: #f0ebe1;
+}
+
+
+.section-content .light-lightpurple-block {
+	background-color: #f5ebf5;
 }
 
 .section-content .turquoise-block {
-	background-color: #00C0C0;
+	background-color: #ebf5fa;
 }
 
 .section-content .pink-block {
-	background-color: #FF8080;
+	background-color: #e6e7e8;
 }
 
 .section-content .gray-block {
-	background-color: #C7C8CA;
-}
-
-.section-content .gray-block {
-	background-color: #C7C8CA;
+	background-color: #ebf5f0;
 }
 
 .section-content .purple-block {
@@ -320,7 +316,7 @@ p {
 }
 
 .collapsible {
-	color: #ffffff;
+	color: #000000;
 	cursor: pointer;
 	width: 100%;
 	border: none;
@@ -334,11 +330,11 @@ p {
 }
 
 .collapsible.active {
-	color: #ffffff;
+	color: #000000;
 }
 
 .collapsible:hover {
-	color: #ffffff;
+	color: #000000;
 }
 
 .collap-content {
