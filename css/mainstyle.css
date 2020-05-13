@@ -324,8 +324,8 @@ p {
 	text-align: left;
 	font-size: 18px;
 	background-color: transparent;
-	font-family: 'Scheherazade', serif;
-	font-weight: 700;
+	font-family: 'Greta Arabic Regular'; 
+	font-weight: 100;
 	padding: 10px;
 }
 
@@ -413,6 +413,8 @@ p {
 	color:#333333;
 	width:100%;
 	text-align:center;
+	font-family: 'Greta Arabic Regular'; 
+	font-weight: 100;
 
 }
 
