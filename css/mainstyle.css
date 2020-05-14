@@ -316,7 +316,7 @@ p {
 }
 
 .collapsible {
-	color: #000000;
+	color: #646464;
 	cursor: pointer;
 	width: 100%;
 	border: none;
@@ -330,11 +330,11 @@ p {
 }
 
 .collapsible.active {
-	color: #000000;
+	color: #646464;
 }
 
 .collapsible:hover {
-	color: #000000;
+	color: #646464;
 }
 
 .collap-content {
@@ -409,8 +409,8 @@ p {
 .btn-singel .close_btn {
 	background-color:#cccccc;
 	padding:8px 20px;
-	font-size:16px;
-	color:#333333;
+	font-size:18px;
+	color:#646464;
 	width:100%;
 	text-align:center;
 	font-family: 'Greta Arabic Regular'; 
