@@ -104,6 +104,19 @@
 				height: 410px;
 			}
 
+			.tablewidth
+			{
+
+				width: 100%;
+			}
+
+			.tdwidth
+			{
+				width: 50%;
+			}
+
+
+
 		}
 
 		@media screen and (max-width: 600px) and (min-width: 480px) {
@@ -116,6 +129,25 @@
 			}
 
 		}
+
+		@media screen and  (min-width: 600px) {
+
+
+			.tablewidth
+			{
+
+				width: 38%;
+			}
+
+			.tdwidth
+			{
+				width: 55%;
+			}
+
+
+		}
+
+		
 	</style>
 
 
@@ -144,25 +176,43 @@
 					<img src="images/cropped_chandelier.png" class="ramadancandle" />
 
 				</div>
-				<h2 style="display: inline-block;font-family: 'ITCHandelGothicArabic-Bold';">أمسيات لا تُنسَى</h2>
-				<!-- <section class="flexEqH">
-					<div id="div1">
-						<img src="images/jacclogo3.png" style="height: 106px;" />
-						<h2>أمسيات لا تُنسَى</h2>
-					</div>
-					<div  id="div2">
-						<img src="images/ramadan1.png" style="height: 250px;" />
-	
-					</div>
-				</section> -->
+				
+				<table class="tablewidth">
+					<tr>
+						<td colspan="2" style="text-align: right;width: 100%;">
+
+							<h2 style="font-family: 'ITCHandelGothicArabic-Bold';">أمسيات لا
+								تُنسَى</h2>
+						</td>
+
+					</tr>
+					<tr>
+
+						<td style="text-align: right;" class="tdwidth">
+							<h3 style="font-family: 'ITCHandelGothicArabic-Bold';text-align: right;font-size: 12px;">
+								نشرة إلكترونية
+								استثنائية</h3>
+							<h3
+								style="font-family: 'ITCHandelGothicArabic-Bold';text-align: right;color: #646464;font-size: 12px;">
+								تغطيات - لقطات فيديو - صور</h3>
+						</td>
+						<td style="text-align: right;width: 50%;">
+							<h3 style="font-family: 'ITCHandelGothicArabic-Bold';text-align: left;font-size: 12px;">
+								العدد 1</h3>
+							<h3
+								style="font-family: 'ITCHandelGothicArabic-Bold';text-align: left;color: #646464;font-size: 12px;">
+								20 أبريل 2020</h3>
+						</td>
+					</tr>
+				</table>
 
 				<div class="bold-hr"></div>
 
 				<div class="lady-photo" style="position: relative;">
-					<div style="background-color: black;color: white;position: absolute;left: 0;padding: 5px;top:0">
+					<!-- <div style="background-color: black;color: white;position: absolute;left: 0;padding: 5px;top:0">
 						<p style="margin-bottom: 0px;font-family: 'ITCHandelGothicArabic-Bold';">النشرة الإلكترونية |
 							<span style="font-weight: 700;">العدد 1 | 1 مايو 2020</span></p>
-					</div>
+					</div> -->
 
 					<img src="images/event-1.jpg" alt="" />
 				</div>
@@ -330,7 +380,8 @@
 								</div>
 
 							</div>
-							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;" id="cardBtn1" data-id="card1" >للمزيد وللقطات من الحفل >></button>
+							<button type="button" class="collapsible" onclick="onClickCollapsible(this);return false;"
+								id="cardBtn1" data-id="card1">للمزيد وللقطات من الحفل >></button>
 						</div>
 					</div>
 				</div>
@@ -576,7 +627,7 @@
 							<div class="collap-content">
 								<div id="container">
 
-								
+
 									<div class="video_box ">
 										<iframe class="iframeplayer" id="iframeplayer4"
 											src='https://rrr.sz.xlcdn.com/?account=yasser&file=NAWAL_LONG.smil&type=streaming&service=wowza&poster=NAWAL_LONG_POSTER.jpg&output=player'
@@ -600,29 +651,29 @@
 										وشكلت
 										جزءًا كبرًا من مسيرتها الغنائية، حيث غنّت لهم ومعهم أغنيات من بينها «أكو مثلك »
 										و«الله حسيبك» و«قضى عمري» و«مثل النسيم » و«أنت طيّب».</p>
-										<div class="">
-											<div class="slideshow-container" dir="ltr">
-												<div class="mySlides fade">
-													<img src="images/slider6/Nawal_1.jpg" alt="" />
-												</div>
-												<div class="mySlides fade">
-													<img src="images/slider6/Nawal_2.jpg" alt="" />
-												</div>
-												<div class="mySlides fade">
-													<img src="images/slider6/Nawal_3.jpg" alt="" />
-												</div>
-												<div class="mySlides fade">
-													<img src="images/slider6/Nawal_4.jpg" alt="" />
-												</div>
-												<div class="mySlides fade">
-													<img src="images/slider6/Nawal_5.jpg" alt="" />
-												</div>
-												<a class="prev" onclick="plusSlides(this,-1)">&#10094;</a>
-												<a class="next" onclick="plusSlides(this,1)">&#10095;</a>
+									<div class="">
+										<div class="slideshow-container" dir="ltr">
+											<div class="mySlides fade">
+												<img src="images/slider6/Nawal_1.jpg" alt="" />
 											</div>
+											<div class="mySlides fade">
+												<img src="images/slider6/Nawal_2.jpg" alt="" />
+											</div>
+											<div class="mySlides fade">
+												<img src="images/slider6/Nawal_3.jpg" alt="" />
+											</div>
+											<div class="mySlides fade">
+												<img src="images/slider6/Nawal_4.jpg" alt="" />
+											</div>
+											<div class="mySlides fade">
+												<img src="images/slider6/Nawal_5.jpg" alt="" />
+											</div>
+											<a class="prev" onclick="plusSlides(this,-1)">&#10094;</a>
+											<a class="next" onclick="plusSlides(this,1)">&#10095;</a>
 										</div>
+									</div>
 
-										
+
 									<div id="floated" class=""><img src="images/nawal_new.jpg" class="nawalImage">
 									</div>
 									<p class="" style="font-family: 'Greta Arabic Regular'; font-weight: 100;">وفي
@@ -899,6 +950,15 @@
 		<div class="container">
 			<div class="btn-singel">
 				<button type="button" class="close_btn">أغلق جميع النوافذ</button>
+			</div>
+		</div>
+		<div class="container"
+			style="background-color: #d99900;color: white;padding-top: 20px;padding-bottom: 20px;margin-bottom: 20px;">
+			<div style="text-align: center;">
+				<h3 style="font-size: 26px;color: #e0e0e0;font-family: 'ITCHandelGothicArabic-Bold';">عددنا المقبل</h3>
+				<h2 style="font-size: 36px;color: white;font-family: 'ITCHandelGothicArabic-Bold';margin-top: 5px;">من
+					العالم إلى الكويت</h2>
+
 			</div>
 		</div>
 		<div class="container" id="card7">
